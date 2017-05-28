@@ -83,7 +83,7 @@ Assume that you have downloaded transferfast5.pl to your home directory.
 
 Let's assume that we connected MinION MN18270 to a Mac to sequence the sample WTDR009 and will like to have all .fast5 files transfer to the USB disk named "ONT-BKUP" in the folder "2016-08-24-R9-WTD-R009/reads".
 
-Create a run configuration file (says ~/run-2016-08-24.txt) with its content as follow:
+Create a run configuration file (says ~/[run-2016-08-24.txt](run_config_examples/run-2016-08-24.USB.txt)) with its content as follow:
 
 ```
 # experiment	minion_id	destination
@@ -142,7 +142,7 @@ INFO: Last transfer 0 .fast5 in 0s, cummulatively 2 .fast5, MN18270 --> /Volumes
 
 Now, instead of transferring to a USB disk, we wish to transfer .fast5 files acquired by MinION MN18270 for sample WTDR009 to a remote storage server "storageServer.org" in the folder "/ONT-datastore/2016-08-24-R9-WTD-R010/reads/".
 
-The only change to the run configuration file above (~/run-2016-08-24.txt) is the 3rd column destination:
+The only change to the run configuration file above (~/[run-2016-08-24.txt](run_config_examples/run-2016-08-24.RemoteServer.txt)) is the 3rd column destination:
 
 ```
 # experiment	minion_id	destination
@@ -179,7 +179,7 @@ perl transferfast5.pl run --experiments run-2016-08-24.txt
 
 We routinely run multiple MinIONs connected to a single MacBook Pro.
 
-The run configuration file (~/run-2016-11-02.txt) for parallel data acquisition of sample WTDR014 with MinION MN18151 and sample WTDR015 with MinION MN19600 to be transferred to our remote storage server "storageServer.org" is as follow:
+The run configuration file (~/[run-2016-11-02.txt](run_config_examples/run-2016-11-02.txt)) for parallel data acquisition of sample WTDR014 with MinION MN18151 and sample WTDR015 with MinION MN19600 to be transferred to our remote storage server "storageServer.org" is as follow:
 
 ```
 # experiment	minion_id	destination
