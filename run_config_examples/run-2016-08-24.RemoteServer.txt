@@ -1,0 +1,2 @@
+# experiment	minion_id	destination
+WTDR009	MN18270	storageServer.org:/ONT-datastore/2016-08-24-R9-WTD-R009/reads/
